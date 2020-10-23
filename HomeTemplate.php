@@ -52,15 +52,17 @@
 			<h2><?php the_field('headingP'); ?></h2>
 		</div>
 		<div class="productcontainerslider">
-			<div class="slideProduct">
-				<div class="innnerSlideContainer">
-					<a href="<?php the_permalink(); ?>">
-						<img src="<?php echo get_the_post_thumbnail_url(); ?>">
-						<h4><?php the_title(); ?></h4>
-						<h6><?php the_field('price'); ?></h6>
-					</a>
+			<?php  $args = array( 'post_type' => 'products', 'posts_per_page' => 4 ); $the_query = new WP_Query( $args ); if ( $the_query->have_posts() ) { while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+				<div class="slideProduct">
+					<div class="innnerSlideContainer">
+						<a href="<?php the_permalink(); ?>">
+							<img src="<?php echo get_the_post_thumbnail_url(); ?>">
+							<h4><?php the_title(); ?></h4>
+							<h6><?php the_field('prices'); ?></h6>
+						</a>
+					</div>
 				</div>
-			</div>
+			<?php  } wp_reset_postdata(); ?>
 		</div>
 	</div>
 </div>

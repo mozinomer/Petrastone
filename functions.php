@@ -30,6 +30,7 @@ function Products_postType() {
             'has_archive' => true,
             'rewrite' => array('slug' => 'products'),
             'show_in_rest' => true,
+            'supports' => array('title', 'thumbnail', 'excerpt', 'editor')
         )
     );
 }
