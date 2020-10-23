@@ -35,3 +35,19 @@ function Products_postType() {
     );
 }
 add_action( 'init', 'Products_postType' );
+function Gallery_postType() {
+    register_post_type( 'gallery',
+        array(
+            'labels' => array(
+                'name' => __( 'Gallery' ),
+                'singular_name' => __( 'Gallery' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'gallery'),
+            'show_in_rest' => true,
+            'supports' => array('title', 'thumbnail')
+        )
+    );
+}
+add_action( 'init', 'Gallery_postType' );

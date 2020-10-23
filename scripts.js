@@ -14,3 +14,12 @@ $('.productcontainerslider').slick({
 	autoPlay: false,
 	infinite: false,
 })
+
+$('.sliderInnergallery').slick({
+	slidesToShow: 3,
+	slideToScroll: 2,
+	arrows: true,
+	dots: false,
+	autoPlay: false,
+	infinite: false,
+})

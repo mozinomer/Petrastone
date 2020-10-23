@@ -62,13 +62,58 @@
 						</a>
 					</div>
 				</div>
-			<?php $duration = $duration + 500; endwhile; ?>
+			<?php $duration = $duration + 500; endwhile; wp_reset_query(); ?>
 		</div>
-		<div class="buttoncintainer">
+		<div class="buttoncintainer" data-aos="zoom-out-up">
 			<a href="asd" class="butonBanner" tabindex="0">
-				Shop Now						</a>
+				Shop Now						
+			</a>
 		</div>
 	</div>
 </div>
+
+<div class="aboutSection">
+	<div class="container">
+		<div class="contentAbout">
+			<div class="row alignCenter">
+				<div class="col-md-6">
+					<img src="<?php the_field('image_About'); ?>">
+				</div>
+				<div class="col-md-6">
+					<div class="contentrightAbout">
+						<h6 data-aos="zoom-out-up" data-aos-duration="700">
+							<?php the_field('aboutSubHeading'); ?>
+						</h6>
+						<h2 data-aos="zoom-out-up" data-aos-duration="1200"><?php the_field('headingAbout'); ?></h2>
+						<p data-aos="zoom-out-up"  data-aos-duration="1500"><?php the_field('content_aboutAbout'); ?></p>
+						<div class="buttoncintainer" data-aos="zoom-out-up">
+							<a href="<?php the_field('link_urlAbout'); ?>" class="butonBanner" tabindex="0"> <?php the_field('link_textAbout'); ?></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="sliderGallery">
+	<div class="sliderInnergallery">
+		<?php $indexofGallery = 1; $duration= 700; $data_query =  new WP_Query(array('post_type' => 'gallery', 'order_by','Des', 'posts_per_page' => -1)); while ( $data_query->have_posts() ) : $data_query->the_post();?>
+		<div class="slideGallery">
+			<div class="innerslideGallery"  data-aos="fade-up" data-aos-duration="<?php echo $duration; ?>">
+				<div class="containerlines"></div>
+				<img src="<?php echo get_the_post_thumbnail_url(); ?>">
+				<div class="indexoftheSlide">
+					<?php echo $indexofGallery;	 ?>
+				</div>
+			</div>
+		</div>
+	   <?php $indexofGallery++; $duration = $duration + 500; endwhile; wp_reset_query(); ?>
+	</div>
+</div>
+
+
 
 <?php get_footer(); ?>

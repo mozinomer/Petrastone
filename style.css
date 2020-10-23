@@ -419,6 +419,7 @@ img {
 .ourproducts {
     text-align: center;
     padding: 100px 0px;
+    border-bottom: 1px solid #ffffff61;
 }
 
 .contentOurProducts h6 {
@@ -435,6 +436,7 @@ img {
     margin-bottom: 50px;
     color: #fff;
 }
+
 .ourproducts .buttoncintainer a {
 	background: #fff;
 	color: #E9BC20;
@@ -449,3 +451,147 @@ img {
 .ourproducts .buttoncintainer a:hover::before {
 	background: #E9BC20;
 }
+.alignCenter {
+	align-items: center;
+}
+.aboutSection .buttoncintainer a {
+	background: #E9BC20;
+	color: #fff;
+	border: 2px solid #E9BC20
+}
+.aboutSection .buttoncintainer a:before,
+.aboutSection .buttoncintainer a:after {
+	background: #E9BC20;
+}
+
+.aboutSection .buttoncintainer a:hover:before,
+.aboutSection .buttoncintainer a:hover:after {
+	background: #E9BC20;
+}
+.aboutSection .buttoncintainer a:hover {
+	background: none;
+	color: #fff;
+}
+.aboutSection .buttoncintainer a {
+	margin-left: 0px;
+}
+.aboutSection {
+	color: #fff;
+	padding: 100px 0px;
+}
+.contentrightAbout {
+    max-width: 600px;
+    margin: auto;
+}
+
+.contentrightAbout h6 {color: #E9BC20;font-weight: 400;text-transform: uppercase;letter-spacing: 1px;margin-bottom: 10px;}
+
+.contentrightAbout h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.contentrightAbout p {
+    line-height: 30px;
+    font-size: 14px;
+    max-width: 550px;
+}
+
+.innerslideGallery {
+    width: 99%;
+    position: relative;
+}
+
+.innerslideGallery img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.indexoftheSlide {
+    position: absolute;
+    bottom: 40px;
+    z-index: 9;
+    font-size: 80px;
+    text-align: right;
+    width: max-content;
+    color: black;
+    -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #fff;
+    right: 50px;
+    font-weight: 700;
+    opacity: 0.5;
+    z-index: 9;
+}
+
+.innerslideGallery::after {content: "";display: block;width: 100%;height: 100%;background: #00000066;position: absolute;top: 0;bottom: 0;left: 0;right: 0;}
+
+.innerslideGallery {
+    overflow: hidden;
+}
+
+.innerslideGallery:hover img {
+    transform: scale(1.5);
+    transition: 3s all;
+}
+
+.innerslideGallery img {
+    transition: 3s all;
+}
+
+.innerslideGallery {
+    cursor: pointer;
+}
+.containerlines {
+    width: 90%;
+    height: 90%;
+    position: relative;
+    display: block;
+    position: absolute;
+}
+
+.containerlines::after {content: "";display: block;width: 2px;height: 90%;position: absolute;right: 0px;z-index: 99;background: #ffffff69;bottom: 0;top: auto;right: -13px;}
+
+.containerlines::before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 90%;
+    position: absolute;
+    right: 0px;
+    z-index: 99;
+    background: #ffffff69;
+    bottom: 0;
+    top: auto;
+    right: -13px;
+    width: 100%;
+    height: 3px;
+    right: -23px;
+    bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
