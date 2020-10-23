@@ -52,9 +52,9 @@
 			<h2><?php the_field('headingP'); ?></h2>
 		</div>
 		<div class="productcontainerslider">
-			<?php  $args = array( 'post_type' => 'products', 'posts_per_page' => 4 ); $the_query = new WP_Query( $args ); if ( $the_query->have_posts() ) { while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+			<?php $duration= 700; $data_query =  new WP_Query(array('post_type' => 'products', 'order_by','Des', 'posts_per_page' => -1)); while ( $data_query->have_posts() ) : $data_query->the_post();?>
 				<div class="slideProduct">
-					<div class="innnerSlideContainer">
+					<div class="innnerSlideContainer" data-aos="fade-up" data-aos-duration="<?php echo $duration; ?>">
 						<a href="<?php the_permalink(); ?>">
 							<img src="<?php echo get_the_post_thumbnail_url(); ?>">
 							<h4><?php the_title(); ?></h4>
@@ -62,7 +62,11 @@
 						</a>
 					</div>
 				</div>
-			<?php  } wp_reset_postdata(); ?>
+			<?php $duration = $duration + 500; endwhile; ?>
+		</div>
+		<div class="buttoncintainer">
+			<a href="asd" class="butonBanner" tabindex="0">
+				Shop Now						</a>
 		</div>
 	</div>
 </div>

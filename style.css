@@ -19,7 +19,7 @@ header {
 }
 
 .container {
-    max-width: 100%;
+    max-width: 1720px;
     padding: 0px 30px;
 }
 
@@ -384,4 +384,68 @@ img {
 }
 .socialMediaLinks li a:hover {
     color: #ab8f23;
+}
+.productcontainerslider .slick-slide {
+	margin: 0 10px;
+}
+.productcontainerslider .slick-list {
+	margin: 0 -10px;
+}
+.innnerSlideContainer img {
+    max-width: 415px;
+    width: 100%;
+    max-height: 415px;
+    height: 100%;
+}
+
+.innnerSlideContainer {
+    max-width: 100%;
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
+}
+
+.innnerSlideContainer h4 {
+    font-size: 24px;
+    color: #E9BC20;
+    margin: 20px 0px 0px;
+}
+
+.innnerSlideContainer h6 {
+    font-size: 18px;
+    color: #fff;
+    margin: 10px 0px 0px;
+}
+.ourproducts {
+    text-align: center;
+    padding: 100px 0px;
+}
+
+.contentOurProducts h6 {
+    color: #E9BC20;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.contentOurProducts h2 {
+    font-size: 36px;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #fff;
+}
+.ourproducts .buttoncintainer a {
+	background: #fff;
+	color: #E9BC20;
+	border: 2px solid #fff;
+}
+.ourproducts .buttoncintainer a:hover {
+	border-color: #E9BC20;
+	background: none;
+	color: #fff;
+}
+.ourproducts .buttoncintainer a:hover::after,
+.ourproducts .buttoncintainer a:hover::before {
+	background: #E9BC20;
 }
