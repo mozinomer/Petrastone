@@ -220,6 +220,8 @@ header {
 
 .slideCOntainerHome h2,
 .slideCOntainerHome p,
+.testimonials h6,
+.testimonials p,
 .slideCOntainerHome .buttoncintainer
 {
     opacity: 0;
@@ -228,7 +230,9 @@ header {
 
 .slideCOntainerHome.slick-active h2,
 .slideCOntainerHome.slick-active p,
-.slideCOntainerHome.slick-active .buttoncintainer
+.slideCOntainerHome.slick-active .buttoncintainer,
+.sliderNac.slick-active h6,
+.sliderContenttest.slick-active	 p
 {
     -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
     clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
@@ -625,6 +629,134 @@ img {
 	border-bottom: 0;
 	transform: rotate(-135deg);
 }
+.testimonials {
+	color: #fff;
+	text-align: center;
+}
+
+.sliderNac img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.sliderNac h6 span {
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 10px 0px;
+}
+
+.sliderNac h6 {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.authortestimonials {
+    max-width: 500px;
+    margin: auto;
+}
+.authortestimonials .slick-next {
+    position: absolute;
+    right: 0px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: max-content;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background: none;
+    font-size: 0;
+}
+
+.authortestimonials .slick-next::after {
+	content: "";
+	display: block;
+	width: 20px;
+	height: 20px;
+	border: 3px solid #fff;
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	border-left: 0;
+	border-bottom: 0;
+	transform: rotate(45deg);
+}
+.authortestimonials .slick-prev {
+    position: absolute;
+    left: 0px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: max-content;
+    width: 50px;
+    height: 50px;
+    border: none;
+    z-index: 9;
+    background: none;
+    font-size: 0;
+}
+
+.authortestimonials .slick-prev::after {
+	content: "";
+	display: block;
+	width: 20px;
+	height: 20px;
+	border: 3px solid #fff;
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	border-left: 0;
+	border-bottom: 0;
+	transform: rotate(-135deg);
+}
+.sliderContenttest p {
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 60px;
+    font-size: 16px;
+    line-height: 33px;
+    font-weight: 300;
+    opacity: 0.8;
+}
+.testimonials {
+    padding: 100px 0px;
+}
+
+.testimonials img {
+    margin: auto;
+}
+
+.headincontenttestimonial img {
+    margin: 50px auto;
+}
+
+.headincontenttestimonial h2 {
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 42px;
+}
+
+.headincontenttestimonial h6 {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #E9BC20;
+}
+.testimonials {
+	border-bottom: 1px solid rgba(255,255,255,0.5);
+}
 
 
 
@@ -644,8 +776,86 @@ img {
 
 
 
+@media only screen and  (max-width: 767px) {
+	.contentSliderHomeBanner h2 {
+    font-size: 32px;
+    font-weight: 600;
+}
 
+.contentSliderHomeBanner p {
+    font-size: 13px;
+    line-height: normal;
+    max-width: 80%;
+    margin: auto;
+}
 
+.slideInnerContainer {
+    min-height: auto;
+    padding: 100px 0px;
+}
 
+.socialMediaLinks {
+    position: absolute;
+    transform: none;
+    left: 0;
+    right: 0;
+    top: auto;
+    bottom: 9px;
+    z-index: 9;
+    max-width: 80%;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
 
+.socialMediaLinks ul li a {
+    font-size: 13px;
+}
 
+* {
+    overflow-x: hidden;
+}
+
+.butonBanner {
+    font-size: 13px;
+    height: 40px;
+}
+
+.MessageCero {
+    display: block;
+    flex: 0 100%;
+    text-align: center;
+}
+
+.ceoMessage .containerMini {display: block;text-align: center;}
+
+.MessageCero h2 {
+    width: 100%;
+    max-width: 100%;
+    font-weight: 600;
+}
+
+.ceoMessage img {
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.MessageCero span {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.ceoMessage {
+    min-height: auto;
+    padding: 50px 20px;
+}
+
+.QuoteOftheDay {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+}
+[data-aos^=fade][data-aos^=fade] {
+    opacity: 1;
+}
+}

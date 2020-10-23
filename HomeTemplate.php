@@ -115,21 +115,29 @@
 <div class="testimonials">
 	<div class="container">
 		<div class="headincontenttestimonial">
-			<h6><?php the_sub_field('authorFoto'); ?></h6>
-			<h2><?php the_sub_field('authorFoto'); ?></h2>
+			<h6><?php the_field('sub_headingT'); ?></h6>
+			<h2><?php the_field('headingT'); ?></h2>
 			<img src="<?php echo get_template_directory_uri(); ?>/images/8.png" class="commmas">
 		</div>
 		<div class="slidertestominalContent">
-			<p></p>
+			<?php if( have_rows('reviews') ): while( have_rows('reviews') ) : the_row(); ?>
+				<div class="sliderContenttest">
+					<p><?php the_sub_field('reviewTa'); ?></p>
+				</div>
+		    <?php endwhile; endif; ?>
 		</div>
 		<div class="authortestimonials">
-			<img src="<?php the_sub_field('authorFoto'); ?>">
-			<h6 class="bameAuthor">
-				<?php the_sub_field('authorFoto'); ?>
-				<span class="designationauthor">
-					<?php the_sub_field('authorFoto'); ?>
-				</span>
-			</h6>
+			<?php if( have_rows('reviews') ): while( have_rows('reviews') ) : the_row(); ?>
+			<div class="sliderNac">
+				<img src="<?php the_sub_field('authorFoto'); ?>">
+				<h6 class="bameAuthor">
+					<?php the_sub_field('author_name'); ?>
+					<span class="designationauthor">
+						<?php the_sub_field('author_designation'); ?>
+					</span>
+				</h6>
+			</div>
+			<?php endwhile; endif; ?>
 		</div>
 	</div>
 </div>

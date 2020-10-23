@@ -23,18 +23,18 @@ $('.sliderInnergallery').slick({
 	autoPlay: false,
 	infinite: false,
 })
-$('.slider-for').slick({
+$('.slidertestominalContent').slick({
 	slidesToShow: 1,
 	slidesToScroll: 1,
 	arrows: false,
-	fade: true,
-	asNavFor: '.slider-nav'
+	dots: false,
+	asNavFor: '.authortestimonials'
 });
-$('.slider-nav').slick({
-	slidesToShow: 3,
+$('.authortestimonials').slick({
+	slidesToShow: 1,
 	slidesToScroll: 1,
-	asNavFor: '.slider-for',
-	dots: true,
-	centerMode: true,
-	focusOnSelect: true
+	asNavFor: '.slidertestominalContent',
+	dots: false,
+	arrows: true,
+	centerMode: false,
 });
