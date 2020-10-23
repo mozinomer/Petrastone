@@ -17,7 +17,7 @@ $('.productcontainerslider').slick({
 
 $('.sliderInnergallery').slick({
 	slidesToShow: 3,
-	slideToScroll: 2,
+	slidesToScroll: 2,
 	arrows: true,
 	dots: false,
 	autoPlay: false,

@@ -8,7 +8,7 @@ ul,.row,ol,p {
 	list-style: none;
 }
 a,a:hover,*:focus {
-	outline: none;
+	outline: none !important;
 }
 header {
     position: absolute;
@@ -570,6 +570,60 @@ img {
     height: 3px;
     right: -23px;
     bottom: 10px;
+}
+
+.sliderGallery .slick-next {
+    position: absolute;
+    right: 60px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: none;
+    font-size: 0;
+    margin: 20px 0px;
+}
+
+.sliderGallery .slick-next button {
+    display: none;
+}
+
+.sliderGallery .slick-next::after {
+	content: "";
+	display: block;
+	width: 20px;
+	height: 20px;
+	border: 2px solid #fff;
+	border-left: 0;
+	border-bottom: 0;
+	transform: rotate(45deg);
+}
+
+.sliderGallery .slick-prev {
+    position: absolute;
+    left: 60px;
+    z-index: 9;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: none;
+    font-size: 0;
+    margin: 20px 0px;
+    bottom: -80px;
+}
+
+.sliderGallery .slick-prev button {
+    display: none;
+}
+
+.sliderGallery .slick-prev::after {
+	content: "";
+	display: block;
+	width: 20px;
+	height: 20px;
+	border: 2px solid #fff;
+	border-left: 0;
+	border-bottom: 0;
+	transform: rotate(-135deg);
 }
 
 
