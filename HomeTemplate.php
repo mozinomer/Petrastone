@@ -21,9 +21,11 @@
 					<p>
 						<?php the_sub_field('contentB'); ?>
 					</p>
-					<a href="<?php the_sub_field('button_linkB'); ?>" class="butonBanner">
-						<?php the_sub_field('button_textB'); ?>
-					</a>
+					<div class="buttoncintainer">
+						<a href="<?php the_sub_field('button_linkB'); ?>" class="butonBanner">
+							<?php the_sub_field('button_textB'); ?>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
