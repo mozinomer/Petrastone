@@ -95,9 +95,6 @@
 		</div>
 	</div>
 </div>
-
-
-
 <div class="sliderGallery">
 	<div class="sliderInnergallery">
 		<?php $indexofGallery = 1; $duration= 700; $data_query =  new WP_Query(array('post_type' => 'gallery', 'order_by','Des', 'posts_per_page' => -1)); while ( $data_query->have_posts() ) : $data_query->the_post();?>
@@ -114,6 +111,28 @@
 	</div>
 </div>
 
+
+<div class="testimonials">
+	<div class="container">
+		<div class="headincontenttestimonial">
+			<h6><?php the_sub_field('authorFoto'); ?></h6>
+			<h2><?php the_sub_field('authorFoto'); ?></h2>
+			<img src="<?php echo get_template_directory_uri(); ?>/images/8.png" class="commmas">
+		</div>
+		<div class="slidertestominalContent">
+			<p></p>
+		</div>
+		<div class="authortestimonials">
+			<img src="<?php the_sub_field('authorFoto'); ?>">
+			<h6 class="bameAuthor">
+				<?php the_sub_field('authorFoto'); ?>
+				<span class="designationauthor">
+					<?php the_sub_field('authorFoto'); ?>
+				</span>
+			</h6>
+		</div>
+	</div>
+</div>
 
 
 <?php get_footer(); ?>
