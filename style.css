@@ -272,3 +272,116 @@ img {
     max-width: 100%;
     display: block;
 }
+.buttoncintainer {
+    padding: 10px 0px 30px;
+}
+.ceoMessage {
+    min-height: 325px;
+    display: flex;
+    align-items: center;
+}
+
+.ceoMessage img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.containerMini {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.MessageCero {
+    display: flex;
+    align-items: center;
+    flex: 0 45%;
+}
+
+.ceoMessage .containerMini {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    justify-content: space-between;
+    max-width: 1140px;
+}
+
+.MessageCero h2 {
+    font-size: 29px;
+    font-weight: 300;
+    margin-right: 80px;
+}
+
+.MessageCero span {
+    font-size: 12px;
+    display: block;
+    text-align: right;
+    color: #E9BC20;
+    margin: 10px 0px 0px;
+}
+
+.MessageCero p {
+    max-width: 500px;
+}
+
+.QuoteOftheDay {
+    max-width: 500px;
+    margin-left: auto;
+    flex: 0 45%;
+}
+.sliderContainerHOmepage .slick-next {
+    position: absolute;
+    right: 10%;
+    bottom: 50px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    font-size: 0;
+    background: none;z-index: 9
+}
+
+.sliderContainerHOmepage .slick-next::after {
+	content: "";
+	display: block;
+	width: 14px;
+	height: 15px;
+	border: 3px solid #fff;
+	border-left: 0;
+	border-bottom: 0;
+	transform: rotate(45deg);
+}
+.sliderContainerHOmepage .slick-prev {
+    position: absolute;
+    right: 13%;
+    z-index: 9;
+    bottom: 50px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    font-size: 0;
+    background: none;
+}
+
+.sliderContainerHOmepage .slick-prev::after {
+	content: "";
+	display: block;
+	width: 14px;
+	height: 15px;
+	border: 3px solid #fff;
+	border-left: 0;
+	border-bottom: 0;
+	transform: rotate(-135deg);
+}
+.sliderContainerHOmepage .slick-prev button,
+.sliderContainerHOmepage .slick-next button {
+	display: none;
+}
+.slideInnerContainer {
+    background-blend-mode: multiply;
+    background-color: #00000078;
+    background-attachment: fixed;
+}
+.socialMediaLinks li a:hover {
+    color: #ab8f23;
+}

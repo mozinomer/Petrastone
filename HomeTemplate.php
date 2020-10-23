@@ -33,7 +33,7 @@
 	</div>
 </div>
 
-<div class="ceoMessage">
+<div class="ceoMessage" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/4.png	');">
 	<div class="containerMini">
 		<div class="MessageCero">
 			<h2> <?php the_field('name_C'); ?> <span><?php the_field('designationC'); ?></span></h2>
@@ -46,7 +46,22 @@
 </div>
 
 <div class="ourproducts">
-	<div class="containerMAx">
+	<div class="container">
+		<div class="contentOurProducts">
+			<h6><?php the_field('heading_smallP'); ?></h6>
+			<h2><?php the_field('headingP'); ?></h2>
+		</div>
+		<div class="productcontainerslider">
+			<div class="slideProduct">
+				<div class="innnerSlideContainer">
+					<a href="<?php the_permalink(); ?>">
+						<img src="<?php echo get_the_post_thumbnail_url(); ?>">
+						<h4><?php the_title(); ?></h4>
+						<h6><?php the_field('price'); ?></h6>
+					</a>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 
