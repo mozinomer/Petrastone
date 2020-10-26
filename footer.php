@@ -18,11 +18,19 @@
 				</div>
 				<div class="logocontainerfooter">
 					<ul>
-					<?php if( have_rows('logo_footer') ): while( have_rows('logo_footer') ) : the_row();  ?>
+					<?php if( have_rows('logo_footer', 'option') ):
+                        while ( have_rows('logo_footer', 'option') ) : the_row();
+                     ?>
 						<li>
-							<img src="<?php the_sub_filed('image_or_icon'); ?>">
+							<img src="<?php the_sub_field('image_or_icon', 'option'); ?>">
 						</li>
-					<?php endwhile; else : endif; ?>
+					<?php
+                       endwhile;
+                        else :
+                        // no rows found
+                         echo " No logo found";
+                          endif;
+                     ?>
 					</ul>
 				</div>
 			</div>

@@ -3,18 +3,26 @@
 <div class="productsContaienr">
 	<div class="container">
 		<div class="row">
-			<?php $duration= 700; $data_query =  new WP_Query(array('post_type' => 'products', 'order_by','Des', 'posts_per_page' => -1)); while ( $data_query->have_posts() ) : $data_query->the_post();?>
+			
+			 <?php $duration= 700; ?> 
+			<?php $termchildren = get_terms('product_category');?>
+                    <?php foreach($termchildren as $category) { 
+                    $term_link = get_term_link( $category );
+                     // $upload_image = wp_get_attachment_image( $category );
+                     
+                               ?>
 			<div class="col-md-6">
 				<div class="innerContainerProdct">
-					<a href="<?php the_permalink(); ?>">
+					<a href="<?php echo $term_link; ?>">
 						<div class="imaheWrapper">
-							<img src="<?php echo get_the_post_thumbnail_url(); ?>">
+							<img src="<?php echo $upload_image; ?>">
 						</div>
-						<h6><?php the_title(); ?></h6>
+						<h6><?php echo $category->name; ?></h6>
 					</a>
 				</div>	
 			</div>
-			<?php $duration = $duration + 500; endwhile; wp_reset_query(); ?>
+			<?php $duration = $duration + 500; ?> 
+			<?php }  ?>
 		</div>
 	</div>
 </div>
