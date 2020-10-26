@@ -57,12 +57,13 @@
 						<div class="col footerCOlumns">
 							<div class="innermenu">
 								<h6>Quick Links</h6>
+								<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 							</div>
 						</div>
 						<div class="col">
 							<div class="newsletterFooter">
 								<h6>Newsletter</h6>
-								<p><?php the_field('asd', 'option'); ?></p>
+								<p><?php the_field('news_letter_conten', 'option'); ?></p>
 								<?php echo do_shortcode('[contact-form-7 id="73" title="News Letter"]'); ?>
 							</div>
 							<div class="socialLinksFooter">

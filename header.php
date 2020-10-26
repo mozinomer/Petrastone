@@ -53,3 +53,16 @@
         </div>
     </div>
 </header>
+
+<?php if (! is_front_page()) { ?>
+    <div class="bannerPages" style="background-image: url('<?php echo get_the_post_thumbnail(); ?>');">
+        <div class="container">
+            <div class="contentInnerBanner">
+                <h2><?php the_title(); ?></h2>
+                <p>
+                    <a href="<?php echo site_url(); ?>">Home</a> > <span><?php the_title(); ?></span>
+                </p>
+            </div>
+        </div>
+    </div>
+<?php } ?>
