@@ -4,33 +4,18 @@
  */
 
 get_header(); ?>
-
-       <section class="blog-gallery video-gellery">
-        <div class="container">
-            <div class="flex"> 
-                <?php if(have_posts()) : ?>
-                       <?php while (have_posts()) : the_post(); ?>
-                <div class="blog">
-                    <div class="blog-image">
-                        
-                    </div>
-                    <div class="blog-detail">
-						<span class="cus-date"><?php echo get_the_date(); ?></span>
-                        <h4><?php the_title();?></h4>
-                        <?php the_excerpt(); ?> 
-                        <a href="<?php the_permalink(); ?>">Read More <img src="<?php echo get_template_directory_uri()?>/assets/images/right.png" alt="arrow-icon"></a>
-                    </div>
-                </div>
-                <?php endwhile; ?>    
-                    
-            </div>
-
-            </div> 
-            <?php endif; ?> 
-                    <?php wp_reset_postdata();  // Don't forget to add this
-                    ?>
+<div class="container">
+    <div class="row">
+<?php if(have_posts()) : while (have_posts()) : the_post(); ?>
+    <div class="col-md-3 productaWrappers">
+        <div class="imagecontainerProductWrapper">
+            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
         </div>
-    </section>
-
+        <h6><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h6>
+        <span class="prcieWrapper"><?php the_field('prices'); ?></span>
+    </div>       
+<?php endwhile; endif; wp_reset_postdata(); ?>
+    </div>  
+</div>
 
 <?php get_footer(); ?>

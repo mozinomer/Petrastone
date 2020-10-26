@@ -190,7 +190,7 @@ a:hover {
 }
 
 body, * {
-    transition: 0.6s all;
+    /*transition: 0.6s all;*/
 }
 
 .butonBanner:hover:after {
@@ -1414,7 +1414,30 @@ ul.beforeSocial {
     margin-bottom: 40px;
 }
 
+.imagecontainerProductWrapper {
+    width: 100%;
+    height: 415px;
+    text-align: center;
+}
 
+.imagecontainerProductWrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.productaWrappers h6 a {
+    color: #fff;
+    text-align: center;
+    display: block;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+
+.productaWrappers h6 a:hover {
+    color: #e9bc20;
+}
 
 
 
