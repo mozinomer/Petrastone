@@ -758,7 +758,92 @@ img {
 	border-bottom: 1px solid rgba(255,255,255,0.5);
 }
 
+.copyroghts {
+    padding: 10px 0px;
+    color: #fff;
+}
 
+footer .row {
+    color: #fff;
+    padding: 50px 0px;
+}
+
+footer i {
+    color: #a68d21;
+}
+
+footer a {
+    color: #fff;
+}
+
+.contentlogoFooet {
+    max-width: 440px;
+    margin: 30px 0px;
+}
+
+footer h6 {
+    font-size: 21px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.innermenu i {
+    width: 30px;
+}
+
+.innermenu a {
+    display: flex;
+    align-items: flex-start;
+}
+
+.socialLinksFooter ul {
+    display: flex;
+    align-items: center;
+}
+
+.socialLinksFooter li:nth-child(even) {
+    margin: 0px 15px;
+}
+
+.socialLinksFooter i {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #E9BC20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 11px;
+}
+
+.socialLinksFooter {
+    margin: 20px 0px;
+}
+
+.socialLinksFooter i:hover {
+    background: #E9BC20;
+    color: #000;
+}
+
+.newsletterFooter form {
+    position: relative;
+}
+
+.newsletterFooter input[type="submit"] {
+    position: absolute;
+    right: 0px;
+    top: 0;
+    bottom: 0;
+    height: 40px;
+}
+
+.newsletterFooter input[type="email"] {
+    height: 40px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+}
 
 
 
