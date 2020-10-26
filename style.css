@@ -924,6 +924,7 @@ footer h6 {
   padding: 1em 2em;
   background: #313131;
   border-radius: 10px;
+  transition: 0.9s all;
 }
 .flip > .front p,
 .flip > .back p {
@@ -1004,11 +1005,157 @@ h1.text-shadow img {
     font-weight: 700;
     letter-spacing: 1px;
 }
+.cardsSections h6 {
+    color: #E9BC20;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 17px;
+    font-weight: 300;
+}
+.ctas {
+    color: #fff;
+    text-align: center;
+    min-height: 276px;
+    display: flex;
+    align-items: center;
+}
 
+.ctas h1 {
+    color: #E9BC20;
+    font-size: 90px;
+    font-weight: 300;
+}
 
+.ctas span {
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.innerslideGallery:hover .indexoftheSlide {
+    color: #fff;
+    -webkit-text-fill-color: #fff;
+    opacity: 1;
+}
 
+.innerslideGallery:hover .containerlines::before, .innerslideGallery:hover .containerlines::after 
+{
+    border-color: #fff;background: #fff;
+}
 
+.innerslideGallery:hover .containerlines::before {
+    height: 1px;
+}
 
+.innerslideGallery .containerlines::before {
+    height: 1px;
+}
+
+.indexoftheSlide, .containerlines:before, .containerlines::after {
+    transition: 0.8s all;
+}
+.tabscontainerabout .container {
+    display: flex;
+    align-items: center;
+    max-width: 1240px;
+    align-items: flex-start;
+}
+
+.tabscontainerabout ul#myTab {
+    display: block;
+    width: 50%;
+}
+
+.tabscontainerabout ul#myTab li a {
+    padding-left: 50px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+}
+
+.tabscontainerabout ul#myTab li a.active {
+    color: #E9BC20;
+}
+
+.tabscontainerabout ul#myTab {
+    border: none;
+}
+
+.tabscontainerabout ul#myTab li a:after {content: "";display: block;width: 30px;height: 2px;background: #fff;position: absolute;top: 0;bottom: 0;margin: auto;left: 0px;}
+
+.tabscontainerabout ul#myTab li a.active:after {
+    background: #E9BC20;
+    width: 40px;
+}
+
+.tabscontainerabout ul#myTab li a.active {
+    padding-left: 60px;
+}
+.tabscontainerabout div#myTabContent {
+    max-width: 40%;
+    width: 100%;
+    margin-left: auto;
+}
+
+.tabscontainerabout div#myTabContent img {
+    max-width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    width: 100%;
+}
+.tabscontainerabout {
+    padding: 60px 0px;
+}
+.videoSection a {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    height: max-content;
+    width: max-content;
+}
+
+.videoSection {
+    position: relative;
+}
+.bannerPages {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.bannerPages h2 {
+    font-size: 54px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.bannerPages a, .bannerPages span {
+    text-transform: capitalize;
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 100;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.bannerPages span {
+    margin-left: 10px;
+}
+.bannerPages {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+}
 
 
 
@@ -1124,5 +1271,205 @@ h1.text-shadow img {
 }
 [data-aos^=fade][data-aos^=fade] {
     opacity: 1;
+}
+.bannerPages p {display: flex;align-items: center;justify-content: center;}
+
+.contentrightAbout {
+    max-width: 100%;
+    margin: 30px 0px;
+}
+
+.contentrightAbout h6 {
+    font-size: 13px;
+}
+
+.contentrightAbout h2 {
+    font-size: 26px;
+}
+
+.contentrightAbout p {
+    font-size: 12px;
+    line-height: normal;
+}
+
+.aboutSection {
+    padding: 60px 0px 0px;
+}
+
+.cardsSections h2 {
+    font-size: 26px;
+}
+
+.cardsSections h6 {
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.cardsSections {
+    padding: 30px 0px;
+}
+
+.flip .front {
+    padding: 10px 19px;
+    border-radius: 11px;
+}
+
+.flip .front h1 {
+    border-radius: 10px;
+}
+
+.tabscontainerabout ul#myTab {
+    width: 100%;
+}
+
+.tabscontainerabout .container {
+    flex-wrap: wrap;
+}
+
+.tabscontainerabout div#myTabContent {
+    width: 100%;
+    max-width: 100%;
+    margin: 40px 0px;
+}
+
+.videoSection a img {
+    width: 40px;
+}
+
+.videoSection > img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.testimonials {
+    padding: 20px 0px;
+}
+
+.headincontenttestimonial h2 {
+    font-size: 26px;
+}
+
+h2 {}
+
+.testimonials p {
+    font-size: 12px;
+    line-height: normal;
+}
+
+h6.bameAuthor {
+    font-size: 16px;
+    line-height: normal;
+    margin: 20px 0px 0px;
+}
+
+h6.bameAuthor span {
+    font-size: 11px;
+    font-weight: 100;
+}
+
+.contentlogoFooet {
+    max-width: 100%;
+    font-size: 12px;
+    line-height: normal;
+    font-weight: 100;
+}
+
+.menuCOntainerpetra .col {
+    max-width: 100%;
+    width: 100%;
+    flex: 0 100%;
+    padding: 0px;
+}
+
+.innermenu {
+    max-width: 100%;
+    margin-block-start: 20px;
+}
+
+.innermenu ul {}
+
+.innermenu ul {
+    display: none;
+}
+
+.innermenu h6 {
+    /* background: red; */
+    padding: 10px 0px;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 0px;
+}
+
+.innermenu h6::after {content: "";display: block;width: 10px;height: 10px;border: 2px solid #fff;transform: rotate(45deg);border-left: 0;border-top: 0;position: absolute;right: 20px;top: 0;bottom: 0;margin: auto;}
+
+.innermenu {
+    margin: 0px;
+}
+
+.newsletterFooter {
+    margin: 40px 0px;
+}
+
+.newsletterFooter h6 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.newsletterFooter > p {
+    font-size: 12px;
+    line-height: normal;
+    font-weight: 100;
+    margin-bottom: 40px;
+}
+
+.menuCOntainerpetra .row {
+    flex-direction: column-reverse;
+}
+
+.copyroghts {
+    font-size: 9px;
+}
+.slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: max-content;
+    margin: 40px auto 0px;
+}
+
+.slick-dots li {
+    border: none;
+    font-size: 0;
+    background: none;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+}
+
+.slick-dots li button {
+    display: none;
+}
+
+.slick-dots li:nth-child(even) {
+    margin: 0px 10px;
+}
+
+.slick-dots li.slick-active {
+    background: #e9bc20;
+    border-color: #e9bc20;
+}
+header {
+    padding-left: 0px;
+    padding-right: 0;
+}
+
+.logoContainer {
+    width: 130px;
+}
+
+header .container {
+    padding: 0px 12px;
 }
 }

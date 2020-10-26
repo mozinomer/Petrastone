@@ -93,7 +93,7 @@
 		  	<?php $asd++; $op++; endwhile; else : endif; ?>
 		</ul>
 		<div class="tab-content" id="myTabContent">
-			<?php $asd=1; $opt = 1; if( have_rows('list_of_items') ): while( have_rows('list_of_items') ) : the_row();  ?>
+			<?php $asd = 1; $opt = 1; if( have_rows('list_of_items') ): while( have_rows('list_of_items') ) : the_row();  ?>
 				<div class="tab-pane fade <?php $opt = 1 ? 'show active' : ''; ?>" id="tabcontent_<?php echo $asd; ?>" role="tabpanel" aria-labelledby="home-tab">
 					<img src="<?php the_sub_field('imageItemText'); ?>">
 				</div>
@@ -102,7 +102,10 @@
 	</div>
 </div>
 <div class="videoSection">
-	video
+	<img src="<?php the_field('background_imageVideo'); ?>" id="videoSectionImage">
+	<a data-fancybox="" href="<?php the_field('video_link'); ?>">
+		<img src="<?php echo get_template_directory_uri(); ?>/images/14.png" alt="">
+	</a>
 </div>
 <div class="testimonials">
 	<div class="container">

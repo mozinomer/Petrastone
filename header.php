@@ -16,12 +16,14 @@
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
     <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
 </head>
 <?php wp_head(); ?>
-<body>
+<body <?php body_class(); ?>>
 
 <header>
     <div class="container">
@@ -55,7 +57,7 @@
 </header>
 
 <?php if (! is_front_page()) { ?>
-    <div class="bannerPages" style="background-image: url('<?php echo get_the_post_thumbnail(); ?>');">
+    <div class="bannerPages" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>');">
         <div class="container">
             <div class="contentInnerBanner">
                 <h2><?php the_title(); ?></h2>
