@@ -57,6 +57,37 @@
     </div>
 </header>
 
+<div class="menuContaienrmain">
+    <div class="innercontaienrASD">
+        <div class="blacked" id="closeMenu"></div>
+        <i class="fa fa-close" id="closeMenu1"></i>
+        <div class="rightMenunContainer">
+            <div class="logocontainerMenu">
+                <a href="<?php echo site_url(); ?>">
+                    <?php 
+                        $custom_logo_id = get_theme_mod( 'custom_logo' );
+                        $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+                    ?>
+                    <img src="<?php echo $image[0]; ?>">
+                </a>
+            </div>
+            <div class="menuCOntainermainrightside">
+                <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+            </div>
+            <div class="socialmediaContainermenu">
+                <ul>
+                    <li><a href="<?php the_field('facebook', 'option'); ?>">facebook</a></li> |
+                    <li><a href="<?php the_field('twitter', 'option'); ?>">twitter</a></li> |
+                    <li><a href="<?php the_field('instagram', 'option'); ?>">instagram</a></li> |
+                    <li><a href="<?php the_field('linkedin', 'option'); ?>">linkedin</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
 <?php if (! is_front_page()) { ?>
     <div class="bannerPages" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>');">
         <div class="container">

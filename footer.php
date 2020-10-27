@@ -65,7 +65,7 @@
 						<div class="col footerCOlumns">
 							<div class="innermenu">
 								<h6>Quick Links</h6>
-								<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+								<?php wp_nav_menu( array( 'container'=> false, 'theme_location' => 'header-menu' ) ); ?>
 							</div>
 						</div>
 						<div class="col">
@@ -113,5 +113,38 @@
 </script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous"></script>
 </body>
+<script type="text/javascript">
+	
+$('#closeMenu, #closeMenu1').click( function(e) {
+	$(this).parent().parent().fadeOut();
+	console.log('asd')
+});
+$('.hamBUrgers').click( function(e) {
+	$('.menuContaienrmain').fadeIn();
+	console.log('qwe')
+})
+if($(window).width() < 767) {
+	$('.innermenu h6').click(function(e) {
+		$(this).parent().find('ul').slideToggle();
+		$(this).parent().parent().siblings().children().next().slideUp();
+		return false;
+		
+	});
+	$('.cardsSections .row').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: true,
+		arrows: false
+	});
+	$('.ctas .row').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: true,
+		arrows: false
+	});
+	
+}
+
+</script>
 <?php wp_footer(); ?>
 </html>

@@ -1534,9 +1534,103 @@ ul.variations {
     font-size: 28px;
 }
 
+.menuContaienrmain {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    /* background: red; */
+    height: 100vh;
+    top: 0;
+    z-index: 99999;
+    display: flex;
+}
 
+.rightMenunContainer {
+    max-width: 700px;
+    padding: 70px;
+    right: 0px;
+    margin-left: auto;
+    background: #000;
+    width: 30%;
+    text-align: center;
+    overflow: auto;
+}
 
+.socialmediaContainermenu ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.rightMenunContainer a {
+    color: #fff;
+}
+
+.menuCOntainermainrightside a {
+    display: block;
+    margin-bottom: 16px;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.logocontainerMenu img {
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.socialmediaContainermenu ul li:nth-child(even) {
+    margin: 0px 10px;
+    color: #fff;
+    padding-left: 10px;
+}
+
+.socialmediaContainermenu ul {
+    color: #fff;
+}
+
+.socialmediaContainermenu ul li:nth-child(odd) {
+    padding-right: 10px;
+    margin-left: 10px;
+}
+
+.socialmediaContainermenu ul li a {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.socialmediaContainermenu ul li a:hover {
+    color: #E9BC20;
+}
+
+.menuCOntainermainrightside ul li a:hover {
+    color: #E9BC20;
+}
+
+.blacked {
+    width: 70%;
+    height: 100%;
+    background: #00000096;
+}
+i#closeMenu1.fa {
+    position: absolute;
+    right: 20px;
+    color: #b09728;
+    font-size: 40px;
+    top: 50px;
+}
+
+.menuContaienrmain {
+    display: none;
+}
+.innercontaienrASD {
+    display: flex;
+    height: 100%;
+}
+.socialmediaContainermenu ul {
+    flex-wrap: wrap;
+}
 
 
 
@@ -1874,4 +1968,31 @@ div#contactRightSide::after {
     min-height: auto;
     padding: 130px 0px 50px;
 }
+.rightMenunContainer {
+    width: 100%;
+}
+
+div#closeMenu {}
+
+.menuCOntainermainrightside a {
+    font-size: 15px;
+}
+
+.socialmediaContainermenu ul {
+    display: block;
+    margin: 20px 0px;
+    border-top: 1px solid #ffffff3b;
+    padding-top: 20px;
+}
+
+.socialmediaContainermenu ul li a {
+    font-size: 13px;
+}
+.butonBanner:before, .butonBanner:after {
+    display: none;
+}
+.socialLinksFooter {
+    display: block !important;
+}
+
 }

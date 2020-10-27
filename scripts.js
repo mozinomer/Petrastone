@@ -96,25 +96,4 @@ $('.button-group').each( function( i, buttonGroup ) {
 });
 
 
-if($(window).width() < 767) {
-	$('.innermenu h6').click(function(e) {
-		console.log('asd')
-		
-	});
-	$('.cardsSections .row').slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		dots: true,
-		arrows: false
-	});
-	$('.ctas .row').slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		dots: true,
-		arrows: false
-	});
-	
-}
-
-
 
