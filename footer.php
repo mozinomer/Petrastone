@@ -83,7 +83,9 @@
 										<a href="<?php the_field('twitter', 'option'); ?>"><i class="fa fa-twitter"></i></a>
 									</li>
 									<li>
-										<a href="<?php the_field('instagram', 'option'); ?>"><i class="fa fa-instagram"></i></a>
+										<a href="<?php echo site_url(); ?>/instagram">
+											<i class="fa fa-instagram"></i>
+										</a>
 									</li>
 									<li>
 										<a href="<?php the_field('linkedin', 'option'); ?>"><i class="fa fa-linkedin"></i></a>
@@ -115,36 +117,41 @@
 </body>
 <script type="text/javascript">
 	
-$('#closeMenu, #closeMenu1').click( function(e) {
-	$(this).parent().parent().fadeOut();
-	console.log('asd')
-});
-$('.hamBUrgers').click( function(e) {
-	$('.menuContaienrmain').fadeIn();
-	console.log('qwe')
-})
-if($(window).width() < 767) {
-	$('.innermenu h6').click(function(e) {
-		$(this).parent().find('ul').slideToggle();
-		$(this).parent().parent().siblings().children().next().slideUp();
-		return false;
+	$('#closeMenu, #closeMenu1').click( function(e) {
+		$(this).parent().parent().fadeOut();
+		console.log('asd')
+	});
+	$('.hamBUrgers').click( function(e) {
+		$('.menuContaienrmain').fadeIn();
+		console.log('qwe')
+	})
+	if($(window).width() < 767) {
+		$('.innermenu h6').click(function(e) {
+			$(this).parent().find('ul').slideToggle();
+			$(this).parent().parent().siblings().children().next().slideUp();
+			return false;
+			
+		});
+		$('.cardsSections .row').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			dots: true,
+			arrows: false
+		});
+		$('.ctas .row').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			dots: true,
+			arrows: false
+		});
 		
-	});
-	$('.cardsSections .row').slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		dots: true,
-		arrows: false
-	});
-	$('.ctas .row').slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		dots: true,
-		arrows: false
-	});
-	
-}
+	}
 
 </script>
+
+
+
+
+
 <?php wp_footer(); ?>
 </html>
