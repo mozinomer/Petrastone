@@ -52,7 +52,7 @@
 			<h2><?php the_field('headingP'); ?></h2>
 		</div>
 		<div class="productcontainerslider">
-			<?php $duration= 700; $data_query =  new WP_Query(array('post_type' => 'products', 'order_by','Des', 'posts_per_page' => -1)); while ( $data_query->have_posts() ) : $data_query->the_post();?>
+			<?php $duration= 700; $data_query =  new WP_Query(array('post_type' => 'product', 'order_by','Des', 'posts_per_page' => -1)); while ( $data_query->have_posts() ) : $data_query->the_post();?>
 				<div class="slideProduct">
 					<div class="innnerSlideContainer" data-aos="fade-up" data-aos-duration="<?php echo $duration; ?>">
 						<a href="<?php the_permalink(); ?>">

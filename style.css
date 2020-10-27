@@ -1631,7 +1631,10 @@ i#closeMenu1.fa {
 .socialmediaContainermenu ul {
     flex-wrap: wrap;
 }
-
+.innnerSlideContainer img {
+    min-height: 370px;
+    object-fit: cover;
+}
 
 
 
