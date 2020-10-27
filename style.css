@@ -1438,7 +1438,101 @@ ul.beforeSocial {
 .productaWrappers h6 a:hover {
     color: #e9bc20;
 }
+.contentContainerproduct {
+    color: #fff;
+}
 
+.contentContainerproduct .row {
+    align-items: center;
+}
+
+.contentContainerproduct h6 {
+    color: #E9BC20;
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.rightsideContent h2 {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+ul.variations {
+    margin: 30px 0px;
+}
+
+ul.variations li {
+    margin-bottom: 10px;
+}
+
+ul.variations strong {
+    margin-right: 30px;
+    min-width: 120px;
+    display: inline-block;
+    font-weight: 500;
+}
+
+ul.variations {
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.exceprt {
+    max-width: 600px;
+}
+
+.exceprt p {
+    margin-bottom: 30px;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.contentContainerproduct img {
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.rightsideContent {
+    padding: 100px 40px;
+}
+.logocontainerfooter ul {
+    display: flex;
+    align-items: center;
+}
+.AlsoLike h2 {
+    text-align: center;
+    font-size: 54px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.AlsoLike .ourproducts {
+    padding: 40px 0px;
+}
+.contentContainerproduct {
+    padding: 30px 0px;
+}
+
+.contentContainerproduct .container {
+    max-width: 100%;
+    padding: 0px;
+}
+
+.rightsideContent {
+    padding: 20px 0px;
+}
+
+.AlsoLike h2 {
+    font-size: 28px;
+}
 
 
 
