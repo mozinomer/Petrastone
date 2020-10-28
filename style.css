@@ -318,9 +318,10 @@ img {
 }
 
 .MessageCero h2 {
-    font-size: 29px;
+    font-size: 28px;
     font-weight: 500;
     margin-right: 80px;
+    text-transform: uppercase;
 }
 
 .MessageCero span {
@@ -330,6 +331,7 @@ img {
     color: #E9BC20;
     margin: 10px 0px 0px;
     font-weight: 300;
+    text-transform: none;
 }
 
 .MessageCero p {
@@ -343,13 +345,14 @@ img {
 }
 .sliderContainerHOmepage .slick-next {
     position: absolute;
-    right: 10%;
-    bottom: 50px;
+    right: 30px;
+    bottom: 10px;
     width: 40px;
     height: 40px;
     border: none;
     font-size: 0;
-    background: none;z-index: 9
+    background: none;
+    z-index: 9;
 }
 
 .sliderContainerHOmepage .slick-next::after {
@@ -364,9 +367,9 @@ img {
 }
 .sliderContainerHOmepage .slick-prev {
     position: absolute;
-    right: 13%;
+    right: 80px;
     z-index: 9;
-    bottom: 50px;
+    bottom: 10px;
     width: 40px;
     height: 40px;
     border: none;
@@ -440,12 +443,12 @@ img {
     color: #E9BC20;
     font-size: 18px;
     letter-spacing: 1px;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 .contentOurProducts h2 {
     font-size: 36px;
-    text-transform: capitalize;
+    text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 50px;
     color: #fff;
@@ -499,11 +502,12 @@ img {
     margin: auto;
 }
 
-.contentrightAbout h6 {color: #E9BC20;font-weight: 400;text-transform: uppercase;letter-spacing: 1px;margin-bottom: 10px;}
+.contentrightAbout h6 {color: #E9BC20;font-weight: 400;text-transform: capitalize;letter-spacing: 1px;margin-bottom: 10px;}
 
 .contentrightAbout h2 {
     font-size: 36px;
     font-weight: 700;
+    text-transform: uppercase;
     margin-bottom: 30px;
 }
 
@@ -659,6 +663,7 @@ img {
     font-size: 14px;
     font-weight: 300;
     margin: 10px 0px;
+    text-transform: uppercase;
 }
 
 .sliderNac h6 {
@@ -755,7 +760,7 @@ img {
 
 .headincontenttestimonial h2 {
     font-weight: 700;
-    text-transform: capitalize;
+    text-transform: uppercase;
     font-size: 42px;
 }
 
@@ -1721,8 +1726,56 @@ div#wpcf7-f73-o1 {
     max-width: 500px;
     margin: auto;
 }
+.sliderContainerHOmepage .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: max-content;
+    bottom: 20px;
+}
 
+.sliderContainerHOmepage .slick-dots button {
+    display: none;
+}
 
+.sliderContainerHOmepage .slick-dots li {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #fff;
+    position: relative;
+    transform: rotate(45deg);
+}
+
+.sliderContainerHOmepage .slick-dots li:nth-child(even) {
+    margin: 0px 17px;
+}
+
+.sliderContainerHOmepage .slick-dots li.slick-active::after {
+    content: "";
+    display: block;
+    width: 9px;
+    height: 8px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+}
+.ceoMessage .containerMini {
+    /* position: relative; */
+}
+
+.ceoMessage .containerMini:after {content: "";width: 1px;height: 100%;left: 0;right: 0;margin: auto;position: absolute;background: #ffffff14;top: 0;}
+
+.ceoMessage {
+    position: relative;
+}
 
 
 
