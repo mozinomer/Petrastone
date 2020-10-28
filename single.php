@@ -13,7 +13,7 @@
 					<ul class="variations">
 						<li><strong>Color</strong><?php the_field('color'); ?></li>
 						<li><strong>Average Size:</strong><?php the_field('average'); ?></li>
-						<li><strong>Finish:r</strong><?php the_field('finish'); ?></li>
+						<li><strong>Finish:</strong><?php the_field('finish'); ?></li>
 					</ul>
 					<div class="exceprt">
 						<?php the_content(); ?>

@@ -1843,9 +1843,37 @@ div#wpcf7-f73-o1 {
 .bannerPages h2 {
     line-height: normal;
 }
+.innerContainerProdct:hover h6 {
+    color: #e9bc20;
+}
 
+.imaheWrapper {
+    min-height: 228px;
+    height: 228px;
+}
 
+.imaheWrapper img {
+    object-fit: cover;
+}
+span.prcieWrapper {
+    color: #fff;
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    font-weight: 100;
+    margin: 20px 0px 0px;
+}
 
+.productaWrappers:hover span, .productaWrappers:hover h6 a {
+    color: #a68c21;
+}
+.imaheWrapper img {
+    height: 100%;
+    object-fit: cover;
+}
+.innnerSlideContainer img {
+    object-fit: contain;
+}
 
 
 
@@ -1884,11 +1912,44 @@ div#wpcf7-f73-o1 {
     .contentAbout img {
     max-width: 100%;
 }
+.ctas h1 {
+    font-size: 38px;
+    font-weight: 700;
+    /* text-align: right; */
+}
+.innnerSlideContainer img {
+    object-fit: contain;
+}
 
+.innnerSlideContainer h4 {
+    font-size: 19px;
+}
+
+.innnerSlideContainer h6 {
+    font-size: 14px;
+}
+.videoSection a img {
+    width: 60px;
+}
 .ceoMessage .containerMini {
     padding: 0px 30px;
 }
+.imagecontainerProductWrapper img {
+    height: 250px;
+    width: 100%;
+    object-fit: contain;
+}
 
+.imagecontainerProductWrapper {
+    height: auto;
+    margin-bottom: 20px;
+    max-height: 515px;
+    min-height: 250px;
+}
+
+body.archive .bannerPages {
+    margin-bottom: 80px;
+}
 .innnerSlideContainer img {
     object-fit: cover;
     min-height: 200px;
@@ -2225,7 +2286,9 @@ div#contactRightSide::after {
     width: 100%;
 }
 
-div#closeMenu {}
+div#closeMenu {
+    width: 10%;
+}
 
 .menuCOntainermainrightside a {
     font-size: 15px;
