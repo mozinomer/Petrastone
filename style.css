@@ -1815,7 +1815,34 @@ div#wpcf7-f73-o1 {
     color: #b09728;
     /* display: block; */
 }
+.ctas h1 {
+    line-height: normal;
+}
+.bannerPages img {
+    display: inline-block;
+    width: 20px;
+}
+.sliderGallery a.butonBanner {
+    background: #E9BC20;
+    color: #000;
+    border-color: #E9BC20;
+}
 
+.sliderGallery a.butonBanner::after, .sliderGallery a.butonBanner::before {
+    background: #E9BC20;
+}
+
+.sliderGallery a.butonBanner:hover {
+    color: #fff;
+    background: none;
+}
+
+.sliderGallery a.butonBanner:hover:after, .sliderGallery a.butonBanner:hover:before {
+    background: #fff;
+}
+.bannerPages h2 {
+    line-height: normal;
+}
 
 
 
@@ -2281,5 +2308,8 @@ h6.bameAuthor {
 
 .rightMenunContainer {
     padding: 100px 40px;
+}
+h6,h2,h3,h1,h4,h5 {
+    line-height: normal;
 }
 }

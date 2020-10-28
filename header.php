@@ -106,7 +106,7 @@
             <div class="contentInnerBanner">
                 <h2><?php the_title(); ?></h2>
                 <p>
-                    <a href="<?php echo site_url(); ?>">Home</a> > <span><?php the_title(); ?></span>
+                    <a href="<?php echo site_url(); ?>">Home</a> <img src="<?php echo get_template_directory_uri(); ?>/images/23.png"> <span><?php the_title(); ?></span>
                 </p>
             </div>
         </div>

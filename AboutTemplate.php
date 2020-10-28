@@ -24,8 +24,8 @@
 </div>
 <div class="cardsSections" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/9.png');">
 	<div class="container">
-		<h6><?php the_field('sub_headingMainCards'); ?></h6>
-		<h2><?php the_field('headingCardsMain'); ?></h2>
+		<h6><?php the_field('headingCardsMain'); ?></h6>
+		<h2><?php the_field('sub_headingMainCards'); ?></h2>
 		<div class="row">
 			<?php if( have_rows('card_contaienr') ): while( have_rows('card_contaienr') ) : the_row();  ?>
 			<div class="col-md-4">
@@ -86,7 +86,7 @@
 		<ul class="nav nav-tabs" id="myTab" role="tablist">
 			<?php $op = 1; $asd = 1; if( have_rows('list_of_items') ): while( have_rows('list_of_items') ) : the_row();  ?>
 				<li class="nav-item">
-			    	<a class="nav-link <?php $op = 1 ? 'active' : ''; ?>" data-toggle="tab" href="#tabcontent_<?php echo $asd; ?>" role="tab" aria-controls="home" aria-selected="true">
+			    	<a class="nav-link <?php echo $op == 1 ? 'active' : ''; ?>" data-toggle="tab" href="#tabcontent_<?php echo $asd; ?>" role="tab" aria-controls="home" aria-selected="true">
 			    		<?php the_sub_field('item_textAboutMainlist'); ?>
 			    	</a>
 				</li>
@@ -94,7 +94,7 @@
 		</ul>
 		<div class="tab-content" id="myTabContent">
 			<?php $asd = 1; $opt = 1; if( have_rows('list_of_items') ): while( have_rows('list_of_items') ) : the_row();  ?>
-				<div class="tab-pane fade <?php $opt = 1 ? 'show active' : ''; ?>" id="tabcontent_<?php echo $asd; ?>" role="tabpanel" aria-labelledby="home-tab">
+				<div class="tab-pane fade <?php echo $opt == 1 ? 'show active' : ''; ?>" id="tabcontent_<?php echo $asd; ?>" role="tabpanel" aria-labelledby="home-tab">
 					<img src="<?php the_sub_field('imageItemText'); ?>">
 				</div>
 		  	<?php $asd++; $opt++; endwhile; else : endif; ?>
