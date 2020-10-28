@@ -436,7 +436,7 @@ img {
 .ourproducts {
     text-align: center;
     padding: 100px 0px;
-    border-bottom: 1px solid #ffffff61;
+    border-bottom: 1px solid #ffffff2b;
 }
 
 .contentOurProducts h6 {
@@ -1811,6 +1811,10 @@ div#wpcf7-f73-o1 {
     text-transform: uppercase;
     margin: 70px 0px 30px;
 }
+.socialmediaContainermenu ul {
+    color: #b09728;
+    /* display: block; */
+}
 
 
 
@@ -1849,8 +1853,32 @@ div#wpcf7-f73-o1 {
 
 
 
+@media only screen and  (max-width: 1100px) and (min-width: 768px) {
+    .contentAbout img {
+    max-width: 100%;
+}
 
+.ceoMessage .containerMini {
+    padding: 0px 30px;
+}
 
+.innnerSlideContainer img {
+    object-fit: cover;
+    min-height: 200px;
+}
+
+.innermenu a {
+    word-break: break-all;
+}
+form.wpcf7-form span {
+    width: 100%;
+    display: block;
+}
+
+.newsletterFooter input[type="email"] {
+    width: 100%;
+}
+}
 
 @media only screen and  (max-width: 767px) {
     .contentSliderHomeBanner h2 {
@@ -2192,5 +2220,66 @@ div#closeMenu {}
 .socialLinksFooter {
     display: block !important;
 }
+.contentSliderHomeBanner::after
+{
+    margin: auto;
+    bottom: auto;
+    top: 0;
+    font-size: 80px;
+}
+.sliderContainerHOmepage .slick-dots {
+    bottom: 50px;
+    left: 0;
+    right: 0;
+}
 
+.sliderContainerHOmepage .slick-next, .sliderContainerHOmepage .slick-prev {
+    bottom: 39px;
+}
+.contentOurProducts h2 {
+    font-size: 31px;
+    line-height: normal;
+}
+
+.contentOurProducts h6 {
+    font-size: 14px;
+}
+
+h6.bameAuthor {
+    margin-left: auto;
+    margin-right: auto;
+}
+.contentAbout img {
+    max-width: 100%;
+}
+.indexoftheSlide {
+    position: absolute;
+    width: 100%;
+}
+
+.containerlines:before {
+    width: 100%;
+}
+
+.containerlines::after {
+    width: 1px;
+    left: auto;
+    right: 0;
+}
+
+.containerlines {
+    padding-right: 20px;
+}
+.galleryMenuContianer .row {
+    display: block;
+}
+
+.galleryMenuContianer .row .col {
+    margin-bottom: 13px;
+    padding: 0px;
+}
+
+.rightMenunContainer {
+    padding: 100px 40px;
+}
 }

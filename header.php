@@ -79,7 +79,7 @@
                     <li><a href="<?php the_field('facebook', 'option'); ?>">facebook</a></li> |
                     <li><a href="<?php the_field('twitter', 'option'); ?>">twitter</a></li> |
                     <li><a href="<?php the_field('instagram', 'option'); ?>">instagram</a></li> |
-                    <li><a href="<?php the_field('linkedin', 'option'); ?>">linkedin</a></li>
+                    <li><a href="<?php the_field('linkedin', 'option'); ?>">Pinterest</a></li>
                 </ul>
             </div>
             <div class="galleryMenuContianer">
