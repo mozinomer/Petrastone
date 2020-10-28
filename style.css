@@ -1717,7 +1717,10 @@ div#wpcf7-f73-o1 {
 .contentSliderHomeBanner {
     position: relative;
 }
-
+.contentAbout img {
+    max-width: 500px;
+    margin: auto;
+}
 
 
 
