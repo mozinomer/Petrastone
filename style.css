@@ -1211,7 +1211,7 @@ h1.text-shadow img {
     font-weight: 100;
 }
 .productsContaienr {
-    padding: 100px 0px;
+    padding: 100px 0px 0px;
 }
 
 .innerContainerProdct:hover img {
@@ -1229,7 +1229,7 @@ h1.text-shadow img {
 
 /*gallery*/
 .galleryPage {
-    padding: 100px 0px;
+    padding: 100px 0px 0px;
 }
 
 .galleryPage .container {
@@ -1429,6 +1429,7 @@ div#contactRightSide::after {
     position: relative;
     z-index: 2;
     padding: 40px;
+    padding-top: 0px;
 }
 .contactUS .container {
     max-width: 1400px;
@@ -1876,7 +1877,12 @@ span.prcieWrapper {
 .innnerSlideContainer img {
     object-fit: contain;
 }
-
+.contactUS {
+    padding-bottom: 0px;
+}
+footer a {
+    word-break: break-all;
+}
 
 
 
@@ -2376,5 +2382,24 @@ h6.bameAuthor {
 }
 h6,h2,h3,h1,h4,h5 {
     line-height: normal;
+}
+.element-item {
+    width: 100%
+}
+.button-group.filters-button-group {
+    display: flex;
+    flex-wrap: nowrap;
+    /* width: max-content; */
+    overflow: auto;
+}
+
+.galleryPage .container {
+    overflow: hidden;
+}
+
+.button-group.filters-button-group button {
+    font-size: 11px;
+    width: 200px;
+    min-width: 100px;
 }
 }
