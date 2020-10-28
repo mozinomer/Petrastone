@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap');
 body {
     margin: 0px;
     background: #000;
+}
+* {
+        font-family: 'Poppins', sans-serif; 
 }
 ul,.row,ol,p {
     margin: 0px;
@@ -135,12 +139,13 @@ li.hamburgercontainer {
 
 .contentSliderHomeBanner h2 {
     font-size: 66px;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .contentSliderHomeBanner p {
     font-size: 18px;
     line-height: 32px;
+    font-weight: 400;
 }
 
 .butonBanner {
@@ -153,6 +158,7 @@ li.hamburgercontainer {
     margin: 50px auto 0px;
     color: #fff;
     position: relative;
+    font-weight: 600;
 }
 
 a:hover {
@@ -313,7 +319,7 @@ img {
 
 .MessageCero h2 {
     font-size: 29px;
-    font-weight: 300;
+    font-weight: 500;
     margin-right: 80px;
 }
 
@@ -323,6 +329,7 @@ img {
     text-align: right;
     color: #E9BC20;
     margin: 10px 0px 0px;
+    font-weight: 300;
 }
 
 .MessageCero p {
@@ -413,6 +420,9 @@ img {
     font-size: 24px;
     color: #E9BC20;
     margin: 20px 0px 0px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .innnerSlideContainer h6 {
@@ -445,6 +455,7 @@ img {
     background: #fff;
     color: #E9BC20;
     border: 2px solid #fff;
+    font-weight: 600;
 }
 .ourproducts .buttoncintainer a:hover {
     border-color: #E9BC20;
@@ -787,7 +798,7 @@ footer a {
 
 footer h6 {
     font-size: 21px;
-    font-weight: 300;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -1635,6 +1646,102 @@ i#closeMenu1.fa {
     min-height: 370px;
     object-fit: cover;
 }
+
+.contentlogoFooet {
+    font-weight: 100;
+}
+.newsletterFooter input[type="submit"] {
+    background: none;
+    font-size: 0px;
+    width: 40px;
+    border: none;
+    background: url('./images/21.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+div#wpcf7-f73-o1 {
+    margin: 25px 0px -10px;
+}
+
+.newsletterFooter input input::placeholder {
+    color: #fff;
+    opacity: 0.7;
+}
+.slick-next {
+    background: url(./images/23.png) !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+.slick-prev {
+    background: url(./images/22.png) !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+.slick-next::after,
+.slick-next::before,
+.slick-prev::after,
+.slick-prev::before 
+{
+    display: none !important;
+}
+.QuoteOftheDay p {font-weight: 100;}
+.contentSliderHomeBanner::after {
+    content: "DESIGN";
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    font-size: 110px;
+    bottom: 0;
+    position: absolute;
+    /* bottom: 40px; */
+    z-index: 9;
+    font-size: 120px;
+    text-align: right;
+    width: max-content;
+    color: black;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #fff;
+    /* right: 50px; */
+    font-weight: 700;
+    opacity: 0.2;
+    z-index: 9;
+    /* top: 0; */
+    margin: auto;
+    bottom: auto;
+    top: -77px;
+    font-size: 150px;
+}
+.contentSliderHomeBanner {
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

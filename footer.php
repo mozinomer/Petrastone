@@ -49,7 +49,7 @@
 									</li>
 									<li>
 										<a href="mailto:<?php the_field('email_adress', 'option'); ?>">
-											<i class="fa fa-mail"></i>
+											<i class="fa fa-envelope"></i>
 											<?php the_field('email_adress', 'option'); ?>
 										</a>
 									</li>
