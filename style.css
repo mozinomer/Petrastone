@@ -421,7 +421,7 @@ img {
 
 .innnerSlideContainer h4 {
     font-size: 24px;
-    color: #E9BC20;
+    color: #fff;
     margin: 20px 0px 0px;
     font-weight: 500;
     text-transform: uppercase;
@@ -456,7 +456,7 @@ img {
 
 .ourproducts .buttoncintainer a {
     background: #fff;
-    color: #E9BC20;
+    color: #000;
     border: 2px solid #fff;
     font-weight: 600;
 }
@@ -474,8 +474,8 @@ img {
 }
 .aboutSection .buttoncintainer a {
     background: #E9BC20;
-    color: #fff;
-    border: 2px solid #E9BC20
+    color: #000;
+    border: 2px solid #E9BC20;
 }
 .aboutSection .buttoncintainer a:before,
 .aboutSection .buttoncintainer a:after {
@@ -571,7 +571,19 @@ img {
     position: absolute;
 }
 
-.containerlines::after {content: "";display: block;width: 2px;height: 90%;position: absolute;right: 0px;z-index: 99;background: #ffffff69;bottom: 0;top: auto;right: -13px;}
+.containerlines::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90%;
+    position: absolute;
+    right: 0px;
+    z-index: 99;
+    background: #ffffff69;
+    bottom: 0;
+    top: auto;
+    right: -13px;
+}
 
 .containerlines::before {
     content: "";
@@ -670,6 +682,9 @@ img {
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 1px;
+    margin-top: 20px;
+    max-width: 214px;
+    margin: 30px auto 0px;
 }
 
 .authortestimonials {
@@ -740,7 +755,7 @@ img {
 .sliderContenttest p {
     max-width: 1000px;
     margin: auto;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     font-size: 16px;
     line-height: 33px;
     font-weight: 300;
@@ -769,9 +784,11 @@ img {
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #E9BC20;
+    opacity: 1;
+    text-transform: capitalize;
 }
 .testimonials {
-    border-bottom: 1px solid rgba(255,255,255,0.5);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 
 .copyroghts {
@@ -785,7 +802,7 @@ img {
 
 footer .container > .row {
     color: #fff;
-    padding: 50px 0px;
+    padding: 90px 0px 50px;
 }
 
 footer i {
@@ -809,7 +826,7 @@ footer h6 {
 }
 
 .innermenu i {
-    width: 30px;
+    /* width: 30px; */
 }
 
 .innermenu a {
@@ -869,8 +886,8 @@ footer h6 {
 }
 
 .innermenu i {
-    margin-right: 10px;
-    margin-top: 6px;
+    margin-right: 0;
+    /* margin-top: 6px; */
 }
 .innermenu {
     max-width: 200px;
@@ -1568,7 +1585,7 @@ ul.variations {
     right: 0px;
     margin-left: auto;
     background: #000;
-    width: 30%;
+    width: auto;
     text-align: center;
     overflow: auto;
 }
@@ -1776,9 +1793,24 @@ div#wpcf7-f73-o1 {
 .ceoMessage {
     position: relative;
 }
-
-
-
+.innnerSlideContainer:hover h4 {
+    color: #E9BC20;
+}
+.innermenu span {
+    margin-left: 20px;
+}
+.newsletterFooter p {
+    font-weight: 100;
+    /* font-size: 16px; */
+}
+.galleryMenuContianer h2 {
+    font-size: 27px;
+    color: #fff;
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 70px 0px 30px;
+}
 
 
 

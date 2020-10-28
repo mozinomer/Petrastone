@@ -82,6 +82,18 @@
                     <li><a href="<?php the_field('linkedin', 'option'); ?>">linkedin</a></li>
                 </ul>
             </div>
+            <div class="galleryMenuContianer">
+                <h2>Gallery</h2>
+                <div class="row">
+                    <?php $data_query =  new WP_Query(array('post_type' => 'gallery', 'posts_per_page' => 4)); while ( $data_query->have_posts() ) : $data_query->the_post();?>
+                        <div class="col">
+                            <div class="imagecontainerGalleryMenu">
+                                <img src="<?php echo get_the_post_thumbnail_url(); ?>">
+                            </div>
+                        </div>
+                    <?php endwhile; wp_reset_query(); ?>
+                </div>
+            </div>
         </div>
     </div>
 </div>

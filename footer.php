@@ -44,19 +44,19 @@
 									<li>
 										<a href="tel:<?php the_field('phone_number', 'option'); ?>">
 											<i class="fa fa-phone"></i>
-											<?php the_field('phone_number', 'option'); ?>
+											<span><?php the_field('phone_number', 'option'); ?></span>
 										</a>
 									</li>
 									<li>
 										<a href="mailto:<?php the_field('email_adress', 'option'); ?>">
 											<i class="fa fa-envelope"></i>
-											<?php the_field('email_adress', 'option'); ?>
+											<span><?php the_field('email_adress', 'option'); ?></span>
 										</a>
 									</li>
 									<li>
 										<a href="#">
 											<i class="fa fa-map-marker"></i>
-											<?php the_field('address_company', 'option'); ?>
+											<span><?php the_field('address_company', 'option'); ?></span>
 										</a>
 									</li>
 								</ul>
